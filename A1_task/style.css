@@ -19,7 +19,8 @@ body {
     background-color: #F9E9B5;
     border-radius: 25px;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 #left{
@@ -35,32 +36,40 @@ body {
 #right{
     width: 33%;
     background-color: #F9E9B5;
+    position: relative;
 }
 
 h6 {
     letter-spacing: 4px;
     text-transform: uppercase;
-    font-size: smaller;
+    font-size: 20px;
     margin-top: 45px;
 }
 h1{
-    font-size: 80px;
+    font-size: 160px;
+    margin-left: -13px;
+    margin-bottom: -23px;
+    margin-top: -25px;
 }
 p{
     color: rgba(60, 60, 60, 0.955);
     width: 65%;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .text {
     width: 70%;
-    padding-top: 75px;
-    padding-left: 35px;
+    /* padding-top: 175px;
+    padding-left: 35px; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:50px ;
     
 }
 #logo {
-    height: 40px;
-    width: 80px;
+    height: 80px;
+    width: 160px;
     position: absolute;
     left: 10px;
     top: 20px
@@ -71,11 +80,10 @@ p{
 #pokeball {
     position: absolute;
     bottom: -70px;
-    left: 20px;
+    left: 10%;
     opacity: 0.3;
-    size: 130%;
-    width: 180px;
-    height: 180px;
+    width: 260px;
+    height: 260px;
     
 
 }
@@ -84,6 +92,7 @@ p{
     display: flex;
     align-items: center;
     
+    
 }
     
     
@@ -91,7 +100,7 @@ p{
 .count span {
     margin-top: 5px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 20px;
     letter-spacing: 1.5px;
 }
 
@@ -100,9 +109,10 @@ p{
     display: grid;
     flex-direction: column;
     gap: 12px;
+    justify-items: end;
 
     position: absolute;
-    right: 40px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -112,30 +122,39 @@ p{
     background-color: #FBC50B;
     height: 10px;
     width: 10px;
+    
 
 }
 
 .scroll div:first-child {
     background-color: black;
-    height: 12px;
-    width: 12px;
+    height: 16px;
+    width: 16px;
 }
 
 #menu {
-    font-size: 37px;
+    font-size: 50px;
 
     position: absolute;
-    right: 40px;
+    right: 30px;
 }
 
 .hero{
     position: absolute;
-    left: 60%;
+    left: 65%;
     top:50%;
     transform: translate(-50%, -50%);
 }
 
 .hero img{
-    height: 150%;
-    width: 150%;
+    height: 120%;
+    width: 120%;
+}
+
+.count div {
+    border: 2px solid black;
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 9px;
+    
 }
