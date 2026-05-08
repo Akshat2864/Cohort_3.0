@@ -19,7 +19,7 @@ body {
     background-color: #F9E9B5;
     border-radius: 25px;
     display: flex;
-    /* overflow: hidden; */
+    overflow: hidden;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 
