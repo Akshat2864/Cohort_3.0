@@ -1,0 +1,157 @@
+@font-face {
+    font-family: mont;
+    src: url(./Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: heading-font;
+    src: url(./Disalina\ Bold.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mont;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #2C2832;
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 30px;
+    color: white;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.nav_left img{
+    height: 30px;
+    align-items: center;
+}
+
+.nav_mid {
+    display: flex;
+    align-items: flex-end;
+    margin-top: -40px;
+    height: 60px;
+    
+}
+.nav_mid a{
+    margin: 0px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    z-index: 3;
+}
+
+
+
+#vision {
+    background-image: linear-gradient(#bf5d30, transparent);
+    height: 70px;
+    width: 75px;
+    position: absolute;
+    top:-10px;
+}
+.nav_right {
+    display: flex;
+    align-items: center;
+}
+
+.nav_right i {
+    margin: 0px 3px;
+    font-size: 30px;
+}
+
+.main {
+    height: 600px;
+    background-image: url(./village.png);
+    background-size: cover ;
+    background-position: 0% 25%;
+    width: 100%;
+    border-bottom-left-radius: 80% 30%;
+    border-bottom-right-radius: 80% 30%;
+}
+.text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    color: white;
+    font-family: mont;
+    line-height: 50px;
+    transform: translate(-50%, -50%);
+    
+}
+.main h1 pre{
+    text-transform: uppercase;
+    font-family: heading-font;
+    color: white;
+    font-size: 95px;
+}
+
+.hero {
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+.hero img {
+    height: 473px;
+    
+}
+
+.btn {
+position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+.btn img {
+    height: 60px;
+    transition:0.3s ease;
+}
+
+.btn img:hover {
+    scale: 1.1;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details h2 {
+    font-family: heading-font;
+    color: white;
+    font-size: 45px;
+}
+
+.details img {
+    width: 750px;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.de-text {
+    display: flex;
+    width: 50%;
+}
+
+
+.de-text p {
+    color: white;
+    width: 50%;
+    margin:0px 40px;
+    font-size: 15px;
+}
+
