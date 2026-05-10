@@ -17,6 +17,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+
     background-color: #2C2832;
 }
 
@@ -28,6 +29,7 @@ nav {
     color: white;
     position: absolute;
     width: 100%;
+    z-index: 2;
     
 }
 
@@ -78,11 +80,23 @@ nav {
     width: 100%;
     border-bottom-left-radius: 80% 30%;
     border-bottom-right-radius: 80% 30%;
+    z-index: 2;
+}
+.blur-effect{
+    height: 600px;
+    backdrop-filter: blur(2px);
+    z-index: 1;
+    position: absolute;
+    background-position: 0% 25%;
+    width: 100%;
+    border-bottom-left-radius: 80% 30%;
+    border-bottom-right-radius: 80% 30%;
 }
 .text {
     position: absolute;
     top: 35%;
     left: 50%;
+    z-index: 2;
     color: white;
     font-family: mont;
     line-height: 50px;
