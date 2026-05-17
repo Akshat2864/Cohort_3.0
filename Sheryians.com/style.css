@@ -1,0 +1,215 @@
+@font-face {
+    font-family: manrope;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+@font-face {
+    font-family: machina;
+    src: url(./NeueMachina-Regular.woff2);
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: manrope;
+}
+html,
+body {
+   height: 100%;
+   width: 100%;
+   background:radial-gradient(#4e220ef7, black 40%);
+   background-repeat: no-repeat;
+   overflow: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    padding: 50px;
+    margin-bottom: 5%;
+}
+
+.logo-main{
+    width: 12em;
+}
+
+.profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+.pic {
+    font-size: 40px;
+}
+
+.pages{
+    background-color: #0c0c0c;
+    height: 3.5vw;
+    width: 37vw;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: -5%;
+    box-shadow: -0.5px -0.5px 2px 0px rgba(255, 255, 255, 0.57);
+
+}
+
+.pages a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #D7D7D7;
+    transition: 0.2s;
+}
+.pages a:first-child{
+    color: white;
+}
+
+.pages a:hover{
+    color: #E8601F;
+}
+
+
+main{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    min-height:80%;
+    width: 80%;
+    border: 1px solid white;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5% ;
+
+}
+
+.head {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    gap:30px;
+    height: 80%;
+    width: 80%;
+    padding: 30px;
+    
+
+}
+
+.head h1{
+    font-family: machina;
+    font-size: 3.5em;
+    font-weight: 400;
+    line-height: 70px;
+}
+.head h1 span{
+    font-family: machina;
+    border: 0.8px solid #E8601F ;
+    padding: 0px 15px;
+    font-weight: 400;
+}
+.head h4 {
+    color:#D7D7D7 ;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+.head h4:first-child{
+    color: #E8601F;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.head button {
+    color: white;
+    background-color: #E8601F;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    box-shadow: -0.2px -0.2px 0px 0px rgba(255, 255, 255, 0.57);
+    transition: 0.5s;
+}
+.head button:hover{
+    box-shadow: 0px 0px 30px 2px #E8601F;
+}
+.head div {
+    display: flex;
+    align-items: center;
+}
+
+.people {
+    display: flex;
+    margin-right: 10px;
+
+}
+.people-pics {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 0.2px solid white;
+    margin-left: -10px;
+    overflow: hidden;
+}
+.people-pics img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.head p{
+    color:#D7D7D7 ;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.head p span {
+    color:#E8601F;
+    margin-right: 10px;
+}
+
+.stats{
+    border: 0.5px solid #d7d7d783;
+    padding: 30px;
+    height: 40vw;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap:20px;
+    grid-template-areas: 
+    "stat-left-top1 stat-left-top2 stat-right stat-right"
+    "stat-left-bot stat-left-bot stat-right stat-right";
+    margin-bottom: 5%;
+}
+
+.stat-left-top1 {
+    grid-area: stat-left-top1;
+
+}
+.stat-left-top2 {
+    grid-area: stat-left-top2;
+}
+.stat-left-bot {
+    grid-area: stat-left-bot;
+}
+.stat-right {
+    grid-area: stat-right;
+}
+
+.stbg{
+    border-radius: 10px;
+    background-color: transparent;
+    border: 0.3px solid #d7d7d783;
+}
