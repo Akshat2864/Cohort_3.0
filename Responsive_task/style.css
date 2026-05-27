@@ -31,6 +31,16 @@ body {
    background-color: #FBF9EB;
 }
 
+body{
+   overflow-x:hidden;
+}
+
+img{
+   max-width:100%;
+   height:auto;
+   display:block;
+}
+
 
 nav{
    z-index: 999;
@@ -128,6 +138,19 @@ nav{
    width: 280px;
 }
 
+@media (max-width:768px){
+
+   .sec-1{
+      background-position:center;
+   }
+
+   .sec-1-text{
+      justify-content:flex-end;
+      padding:1.5rem;
+   }
+
+}
+
 .sec-2{
    border-bottom: 2px solid black;
 }
@@ -211,6 +234,21 @@ nav{
      top:20%;
 }
 
+@media (max-width:768px){
+
+   .sec3-text-btn{
+      position:relative;
+      top:auto;
+      margin-bottom:2rem;
+      font-size:2rem;
+   }
+
+   .section3-text h1{
+      margin-top:0;
+   }
+
+}
+
 
 .sec-4{
    width: 100%;
@@ -247,14 +285,18 @@ nav{
 
 .sec-4 .cen-text h1{
    font-family: midnight;
-   font-size: 12rem;
+   font-size: clamp(3rem, 10vw, 12rem);
    text-align: center;
 }
 
 .sec-4 .cen-text h2{
    width: 90%;
-   font-size: 3.5rem;
+   font-size: clamp(1rem, 3vw, 3.5rem);
    text-align: center;
+}
+.sec4-circles{
+   flex-wrap:wrap;
+   justify-content:center;
 }
 
 .sec-4 .cen-text #story-btn{
@@ -267,6 +309,53 @@ nav{
    transition: all ease 1s;
    z-index: 99;
    position: relative;
+
+}
+
+@media (max-width:768px){
+
+   .sec-4 .cen-text{
+      padding:1rem;
+      justify-content:center;
+      gap:1rem;
+   }
+
+   .sec4-btn{
+      font-size:2rem;
+      margin-bottom:0;
+   }
+
+   .sec-4 .cen-text h1{
+      font-size:3rem;
+   }
+
+   .sec-4 .cen-text h2{
+      font-size:0.9rem;
+      width:100%;
+      line-height:1.3;
+   }
+
+   .sec4-circles{
+      gap:0.5rem;
+   }
+
+   .sec4-circles div{
+      width:7rem !important;
+   }
+
+   .sec4-circles div div{
+      width:4.5rem !important;
+      height:4.5rem !important;
+   }
+
+   .sec4-circles h3{
+      font-size:0.7rem;
+   }
+
+   #story-btn{
+      padding:0.5rem 1.5rem !important;
+      font-size:0.9rem;
+   }
 
 }
 
@@ -297,6 +386,62 @@ nav{
     margin-bottom: 2rem;
 }
 
+@media (max-width:768px){
+
+   .sec-5{
+      height:auto !important;
+      padding:4rem 0;
+   }
+
+   .sec5-text{
+      position:relative;
+      top:auto;
+      left:auto;
+      padding:1rem;
+      margin-bottom: 2rem;
+   }
+
+   .sec5-text h1{
+    margin-top: 1rem;
+   }
+
+   .sec5-cards{
+      position:relative !important;
+      top:auto !important;
+      flex-wrap:wrap;
+      justify-content:center;
+   }
+
+   .sec5-singlecard{
+      width:90% !important;
+      max-width:340px;
+   }
+
+}
+
+@media (max-width:768px){
+
+   .sec6-left img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+   }
+
+   .sec6-right{
+      padding:1.5rem;
+   }
+
+   .sec6-right h1{
+      font-size:2.8rem !important;
+   }
+
+   .sec6-right h3{
+      font-size:1.2rem;
+      line-height:1.2;
+   }
+
+}
+
 
 .sec7-text{
    position: absolute;
@@ -320,7 +465,33 @@ nav{
 }
 
 
+@media (max-width:768px){
 
+   .sec-7{
+      height:auto !important;
+      padding:4rem 0;
+   }
+
+   .sec7-text{
+      position:relative;
+      top:auto;
+      left:auto;
+      padding:1rem;
+   }
+
+   .sec7-cards{
+      position:relative !important;
+      top:auto !important;
+      flex-wrap:wrap;
+      justify-content:center;
+   }
+
+   .sec7-singlecard{
+      width:90% !important;
+      max-width:340px;
+   }
+
+}
 
 .sec-8{
    width: 100%;
@@ -337,5 +508,67 @@ nav{
 .sec-8 img{
    width: 100%;
    height: auto;
+
+}
+
+@media (max-width:768px){
+
+   .sec-8 .bgimg{
+      height:auto;
+      min-height:100vh;
+      background-size:cover;
+      background-position:center;
+   }
+
+   .sec-8 .sec-8-text{
+      position:relative;
+      width:100%;
+      border-radius:0;
+      left:0;
+      top:0;
+   }
+
+   .sec-8 .sec-8-text{
+      min-height:auto;
+      gap:2rem;
+      padding:1.5rem;
+   }
+
+   .sec-8 .text-bot{
+      height:auto;
+      gap:1rem;
+   }
+
+   .sec-8 .text-bot h3{
+      font-size:1.2rem;
+      line-height:1.2;
+   }
+
+   .sec-8 button{
+      width:fit-content;
+   }
+
+}
+
+@media (max-width:768px){
+
+   h1{
+      line-height:1 !important;
+   }
+
+   p,
+   h2,
+   h3{
+      line-height:1.2;
+   }
+
+   button{
+      white-space:nowrap;
+   }
+
+   .sec5-text h1,
+   .sec7-text h1{
+      font-size:2.5rem !important;
+   }
 
 }
