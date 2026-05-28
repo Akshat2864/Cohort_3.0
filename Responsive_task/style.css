@@ -99,6 +99,17 @@ nav{
    border: 1px solid black;
 }
 
+@media (max-width: 768px) {
+   #code, #discount{
+      display: none;
+   }
+   .sec-1-text{
+      align-items: center;
+      width: 100%;
+      text-align: center;
+   }
+}
+
 
 .card-div{
    display: flex;
@@ -240,6 +251,7 @@ nav{
       position:relative;
       top:auto;
       margin-bottom:2rem;
+      margin-top:2rem;
       font-size:2rem;
    }
 
@@ -314,6 +326,7 @@ nav{
 
 @media (max-width:768px){
 
+
    .sec-4 .cen-text{
       padding:1rem;
       justify-content:center;
@@ -326,21 +339,22 @@ nav{
    }
 
    .sec-4 .cen-text h1{
-      font-size:3rem;
+      font-size:2rem;
    }
 
    .sec-4 .cen-text h2{
-      font-size:0.9rem;
+      font-size:0.7rem;
       width:100%;
       line-height:1.3;
    }
 
    .sec4-circles{
       gap:0.5rem;
+      flex-wrap:nowrap ;
    }
 
    .sec4-circles div{
-      width:7rem !important;
+      width:6rem !important;
    }
 
    .sec4-circles div div{
@@ -349,11 +363,11 @@ nav{
    }
 
    .sec4-circles h3{
-      font-size:0.7rem;
+      font-size:0.5rem;
    }
 
    #story-btn{
-      padding:0.5rem 1.5rem !important;
+      padding:0.2rem 1rem !important;
       font-size:0.9rem;
    }
 
@@ -421,6 +435,7 @@ nav{
 
 @media (max-width:768px){
 
+   
    .sec6-left img{
       width:100%;
       height:100%;
@@ -429,6 +444,8 @@ nav{
 
    .sec6-right{
       padding:1.5rem;
+      align-items: center;
+      text-align: center;
    }
 
    .sec6-right h1{
@@ -470,6 +487,7 @@ nav{
    .sec-7{
       height:auto !important;
       padding:4rem 0;
+      margin-bottom: 2rem;
    }
 
    .sec7-text{
@@ -489,6 +507,10 @@ nav{
    .sec7-singlecard{
       width:90% !important;
       max-width:340px;
+   }
+
+   .sec-7 .explorebtn{
+      top:20%;
    }
 
 }
@@ -548,6 +570,12 @@ nav{
       width:fit-content;
    }
 
+}
+
+@media (max-width:768px) {
+   .emailinput, #emin-left{
+      flex-direction: column;
+   }
 }
 
 @media (max-width:768px){
