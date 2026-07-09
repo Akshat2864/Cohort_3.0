@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="background-overlay"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-layer-group"></i>
+        <h2>Productivity Dashboard</h2>
+      </div>
+
+      <div class="header-right">
+        <div class="date-time">
+          <h3 id="currentTime">12:00 PM</h3>
+
+          <p id="currentDate">Monday, January 1</p>
+        </div>
+
+        <button id="themeBtn">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section id="dashboard" class="dashboard">
+      <div class="card" data-feature="todo">
+        <i class="fa-solid fa-list-check"></i>
+
+        <h2>Todo List</h2>
+
+        <p>Organize and manage all your daily tasks.</p>
+      </div>
+
+      <div class="card" data-feature="planner">
+        <i class="fa-solid fa-calendar-days"></i>
+
+        <h2>Daily Planner</h2>
+
+        <p>Schedule your entire day hour by hour.</p>
+      </div>
+
+      <div class="card" data-feature="pomodoro">
+        <i class="fa-solid fa-clock"></i>
+
+        <h2>Pomodoro</h2>
+
+        <p>Stay focused using a work timer.</p>
+      </div>
+
+      <div class="card" data-feature="quotes">
+        <i class="fa-solid fa-quote-left"></i>
+
+        <h2>Motivation</h2>
+
+        <p>Read inspiring quotes while working.</p>
+      </div>
+
+      <div class="card" data-feature="weather">
+        <i class="fa-solid fa-cloud-sun"></i>
+
+        <h2>Weather</h2>
+
+        <p>Check live weather conditions.</p>
+      </div>
+
+      <div class="card" data-feature="goals">
+        <i class="fa-solid fa-bullseye"></i>
+
+        <h2>Daily Goals</h2>
+
+        <p>Set goals and track your progress.</p>
+      </div>
+    </section>
+
+    <!-- ================= FEATURE CONTAINER ================= -->
+
+    <section id="featureContainer" class="feature-container hidden">
+      <button class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Back to Dashboard
+      </button>
+
+      <!-- ================= TODO ================= -->
+
+      <div id="todo" class="feature hidden">
+        <h1>Todo List</h1>
+
+        <div class="input-group">
+          <input type="text" id="todoInput" placeholder="Enter Task" />
+
+          <button id="addTask">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+      </div>
+
+      <!-- ================= DAILY PLANNER ================= -->
+
+      <div id="planner" class="feature hidden">
+        <h1>Daily Planner</h1>
+
+        <div id="plannerContainer"></div>
+      </div>
+
+      <!-- ================= POMODORO ================= -->
+
+      <div id="pomodoro" class="feature hidden">
+        <h1>Pomodoro Timer</h1>
+
+        <div class="timer">
+          <h2 id="timerDisplay">25:00</h2>
+
+          <div class="timer-buttons">
+            <button id="startTimer">Start</button>
+
+            <button id="pauseTimer">Pause</button>
+
+            <button id="resetTimer">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= MOTIVATION ================= -->
+
+      <div id="quotes" class="feature hidden">
+        <h1>Motivation Quote</h1>
+
+        <div class="quote-box">
+          <p id="quote">Click below to get motivated.</p>
+
+          <span id="author"></span>
+
+          <button id="newQuote">New Quote</button>
+        </div>
+      </div>
+
+      <!-- ================= WEATHER ================= -->
+
+      <div id="weather" class="feature hidden">
+        <h1>Weather</h1>
+
+        <div class="weather-card">
+          <h2 id="city">Loading...</h2>
+
+          <h1 id="temperature">--</h1>
+
+          <p id="condition">Waiting...</p>
+
+          <div class="weather-details">
+            <div>
+              <h3>Humidity</h3>
+
+              <p id="humidity">--</p>
+            </div>
+
+            <div>
+              <h3>Wind</h3>
+
+              <p id="wind">--</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= DAILY GOALS ================= -->
+
+      <div id="goals" class="feature hidden">
+        <h1>Daily Goals</h1>
+
+        <div class="input-group">
+          <input id="goalInput" placeholder="Enter Goal" />
+
+          <button id="addGoal">Add Goal</button>
+        </div>
+
+        <ul id="goalList"></ul>
+
+        <h3 id="goalProgress">0 / 0 Completed</h3>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
